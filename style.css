@@ -1,0 +1,361 @@
+/*RESET*/
+html{overflow-y: scroll;min-height: 100%;}
+body{height: 100%;margin: 0;}
+a img{border: none;}
+:focus{outline: 0 none;}
+h1,h2,h3,h4,h5,h6{margin: 0;}
+ul{margin: 0;padding: 0;list-style: none;}
+table,th,td{vertical-align: middle;border-collapse: collapse;border-spacing: 0;margin: 0;}
+caption, th{text-align: left;font-weight: normal;}
+section,article,aside,figure,header,nav{display: block;}
+header,
+section,
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clear{
+	clear: both;
+}
+
+.pro-body {
+    background: linear-gradient(to bottom, #0038FF, #C08EFF );
+    
+}
+
+.header {
+    position: relative;
+    min-height: 99px;
+    background-color: #373C3F;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.menu{
+    margin-left: 56px;
+    
+}
+.menu li {
+	color: white;
+	font-size: 15px;
+    display: inline-block;
+    margin-right: 5%;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+ 
+}
+.sandwich{
+	width: 37px;
+	height: 37px;
+	position: absolute;
+	right: 5%;
+	top: 21px;
+	display: none;
+	cursor: pointer;
+}
+
+.sandwich div{
+	height: 4px;
+	background-color: #FF50E3;
+}
+
+.sandwich div:nth-child(2) {
+    margin: 9px 0;
+}
+
+
+
+
+                                                        /* РАЗРЕШЕНИЕ 980 */
+@media screen and (max-width: 980px){
+    .title h1{
+        font-size: 60px;
+    }
+    .title h3{
+        padding-top: 100px;
+    }
+
+    /* блок текста со стрелкой */
+    .text1 a{
+        font-size: 15px;
+    }
+
+    .block1 .text1{
+        padding-top: 48px;
+        padding-bottom: 43px;
+        padding-left: 52px;
+        padding-right: 83px;
+    }
+}
+
+                                                        /* РАЗРЕШЕНИЕ 640 */
+
+@media screen and (max-width: 640px) {
+    .sandwich {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background-color:  #373C3F;
+        margin-left: 0;
+    }
+
+    .menu li {
+        display: block;
+        padding: 0 5% 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .sandwich:hover + .menu{
+        display: block;
+    }
+
+
+    body .title h1{
+        font-size: 40px;
+        width: 499px;
+    }
+    .title h3{
+        margin-top: 30%;
+    }
+
+
+
+/* блок текста со стрелкой */
+    .text1 a{
+        font-size: 11px;
+    }
+    .block1 .text1{
+        padding-top: 32px;
+        padding-bottom: 33px;
+        padding-left: 39px;
+        padding-right: 52px;
+    }
+    .block1 .strelka {
+       width: 50%;
+    }
+
+    .block1 .text1 {width: 100%;}
+    .block1 .pic img{width: 100%;}
+    .block1 .pic{width: 50%;}
+
+
+
+   /*  последний блок текста */
+
+    body .text2{       
+        padding-bottom: 75px;}
+
+    .text2 .box_3_1{
+        font-size: 30px;
+        padding-left: 44px;
+    }
+    .text2 .box_3_2{
+        width: 100%;
+        padding-left: 44px;
+        padding-bottom: 30px;
+        font-size: 14px;
+    }
+    .text2 .box_3_3{
+        width: 100%; 
+        padding-left: 44px;
+        padding-top: 0px;
+        font-size: 14px;
+    }
+
+
+}
+
+
+                                                        /* РАЗРЕШЕНИЕ 320 */
+@media screen and (max-width: 320px){
+    .menu {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 60px;
+        background-color:  #373C3F;
+        
+    }
+
+    .menu li {
+        display: block;
+        padding: 0 5% 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .sandwich:hover + .menu{
+        display: block;
+    }
+    
+    
+    body .title h1{
+        font-size: 40px;
+        width: 260px;
+        padding-left: 32px;
+    }
+    body .title h3{
+        padding-bottom: 61px;
+        padding-left: 32px;
+    }
+
+
+
+/* блок текста со стрелкой */
+    .text1 a{
+        font-size: 14px;
+    }
+    .block1 .text1{
+        padding-top: 25px;
+        padding-bottom: 33px;
+        padding-left: 32px;
+        padding-right: 34px;
+    }
+    .text1{
+        padding-right: 87px;
+        position: relative;
+    }
+    .block1 .strelka {
+        width: 100%;
+        height: 331px;
+    }
+    .block1 .pic{
+        width: 100%;
+    }
+}
+
+
+
+
+.title{
+    position: relative;
+	height: 576px;
+	margin-top: 0;
+	font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #0038FF, #C08EFF );
+    box-sizing: border-box;
+}
+.title h1{
+    width: 728px;
+}
+
+h1{
+	margin: 0;
+	padding-left: 55px;
+	padding-top: 100px;
+	padding-bottom: 0;
+	color: white;
+	font-size: 70px;
+}
+
+h3{
+    margin-top: 5%;
+	color: #ccbcff;
+	padding-left: 55px;
+	font-size: 30px;
+}
+
+/* блок текста со стрелкой */
+.block1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text1{
+    width: calc(100% - 245px);
+	background-color: #371D51;
+	font-size: 18px;
+	font-family: Montserrat;
+	color: white;
+	padding-top: 50px;
+	padding-left: 55px;
+	padding-right: 87px;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.strelka{
+    display: flex;
+	width: 245px;
+	background-color:  #DF44D0;
+    align-items:center;
+    justify-content: center;
+}
+
+.strela{
+    width: 60px;
+    height: 60px;
+    border-top: 6px solid white;
+    border-right: 6px solid white;
+    transform: rotate(45deg);
+}
+
+.pic{
+    width: 33.33%;
+    line-height: 0;
+}
+.block1 .pic img{
+     width: 100%;
+     
+}
+
+/* блок последнего текста */
+
+.text2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	background-color: black;
+    padding-bottom: 134px;
+}
+
+.box_3_1{
+    width: 100%;
+	padding-left: 81px;
+	padding-top: 49px;
+	font-family: Montserrat;
+	color: #FF50E3;
+	font-size: 30px;
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+.box_3_2{
+	width: 50%;
+	padding-top: 33px;
+	padding-left: 83px;
+	color: white;
+	font-family: Montserrat;
+	font-size: 14px;
+	float: left;
+	line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.box_3_3{
+	width: 50%;
+	padding-top: 33px;
+	padding-left: 33px;
+	color: white;
+	font-family: Montserrat;
+	font-size: 14px;
+	float: left;
+	line-height: 1.5;
+    box-sizing: border-box;
+}
+
